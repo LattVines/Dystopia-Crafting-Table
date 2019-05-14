@@ -5,6 +5,12 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 
+# Ignore some special folders
+Assets/Art
+Assets/Art.meta
+Assets/Demigiant
+Assets/Demigiant.meta
+
 # Visual Studio cache directory
 .vs/
 
