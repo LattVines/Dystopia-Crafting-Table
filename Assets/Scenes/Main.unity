@@ -238,6 +238,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 917170254}
+        m_MethodName: SetScalerBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Item Level
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &62539962
@@ -344,7 +355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.171, y: 0.1486646}
   m_AnchorMax: {x: 0.90400004, y: 0.89948314}
-  m_AnchoredPosition: {x: -0.39999962, y: 0.3899994}
+  m_AnchoredPosition: {x: -0.40000153, y: 0.3899994}
   m_SizeDelta: {x: 0.79999995, y: 0.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95540822
@@ -581,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.88930565}
   m_AnchorMax: {x: 0.9785484, y: 0.9752169}
-  m_AnchoredPosition: {x: -0.4774933, y: 0.9500122}
+  m_AnchoredPosition: {x: -0.47747803, y: 0.9500122}
   m_SizeDelta: {x: -0.9549999, y: -1.7200003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223747827
@@ -756,7 +767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13839011, y: 0.127}
   m_AnchorMax: {x: 0.92227805, y: 0.88956636}
-  m_AnchoredPosition: {x: 0.40000153, y: -1.2000008}
+  m_AnchoredPosition: {x: 0.40000153, y: -1.199997}
   m_SizeDelta: {x: 1.0999999, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244782929
@@ -984,6 +995,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 557215253}
+        m_MethodName: SetChallengeBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Yes
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1250,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13430545, y: 0.52000004}
   m_AnchorMax: {x: 0.90269697, y: 0.7842928}
-  m_AnchoredPosition: {x: -0.87301636, y: 1}
+  m_AnchoredPosition: {x: -0.87298584, y: 1}
   m_SizeDelta: {x: -2.5999985, y: 1.7000008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470142084
@@ -1560,7 +1582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13839011, y: 0.127}
   m_AnchorMax: {x: 0.92227805, y: 0.88956636}
-  m_AnchoredPosition: {x: 0.40000153, y: -1.199997}
+  m_AnchoredPosition: {x: 0.3999939, y: -1.199997}
   m_SizeDelta: {x: 1.0999999, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540556998
@@ -1705,6 +1727,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee05b52243f054d42b5dea23ba9e9a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ability: 
+  challenge_used: 
+  constant_bonus: 0
+  constantBonusInput: {fileID: 1345581072}
+  formula_text: {fileID: 1829285226}
 --- !u!1 &564745784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,7 +1975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.12999916}
+  m_AnchoredPosition: {x: 0, y: 0.12999725}
   m_SizeDelta: {x: -20, y: -7.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &608169026
@@ -1984,7 +2011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter value...
+  m_Text: None...
 --- !u!222 &608169027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2182,7 +2209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.041, y: 0.62845033}
   m_AnchorMax: {x: 1, y: 0.6783245}
-  m_AnchoredPosition: {x: -0.6674957, y: 0.34999847}
+  m_AnchoredPosition: {x: -0.667511, y: 0.3500061}
   m_SizeDelta: {x: 1.335, y: 2.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634480169
@@ -2530,6 +2557,7 @@ GameObject:
   - component: {fileID: 709163719}
   - component: {fileID: 709163718}
   - component: {fileID: 709163721}
+  - component: {fileID: 709163722}
   m_Layer: 5
   m_Name: IntelligenceButton_Defend
   m_TagString: Untagged
@@ -2554,7 +2582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.67554843, y: 0.68876404}
   m_AnchorMax: {x: 0.908699, y: 0.79061127}
-  m_AnchoredPosition: {x: 0.15499115, y: 0.41600037}
+  m_AnchoredPosition: {x: 0.15498352, y: 0.41601562}
   m_SizeDelta: {x: 0.30999994, y: 0.2480998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709163718
@@ -2633,6 +2661,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 557215253}
+        m_MethodName: SetAbilityBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Brains
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &709163719
@@ -2686,6 +2725,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Deactivated_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   Active_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+--- !u!95 &709163722
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709163716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b045d79d651ceaf4689f3088d789dfd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &713197890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,6 +3020,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 917170254}
+        m_MethodName: SetScalerBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Attacker Level
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &749522946
@@ -3068,7 +3137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13839011, y: 0.127}
   m_AnchorMax: {x: 0.92227805, y: 0.88956636}
-  m_AnchoredPosition: {x: 0.40000153, y: -1.2000008}
+  m_AnchoredPosition: {x: 0.40000153, y: -1.199997}
   m_SizeDelta: {x: 1.0999999, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &769272221
@@ -3255,14 +3324,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 20
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Attack Formula: \nStrength + d10 + 5\nMaximum Roll: 15\nMinimum Roll: 14"
+  m_Text: "Attack Formula: \nStrength + d10 + 1\nMaximum Roll: 15\nMinimum Roll: 14"
 --- !u!222 &791059176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3388,6 +3457,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 557215253}
+        m_MethodName: SetAbilityBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Brawn
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &808045176
@@ -3494,7 +3574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.033849485, y: 0.5815416}
   m_AnchorMax: {x: 1, y: 0.64615285}
-  m_AnchoredPosition: {x: 0.16499329, y: -0.5550232}
+  m_AnchoredPosition: {x: 0.16497803, y: -0.5550232}
   m_SizeDelta: {x: -0.33, y: -1.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &821571993
@@ -3656,6 +3736,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 917170254}
+        m_MethodName: SetScalerBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &832098273
@@ -3766,7 +3857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3718495, y: 0.7142252}
   m_AnchorMax: {x: 0.5968495, y: 0.8122252}
-  m_AnchoredPosition: {x: 0.20000076, y: -0.47999573}
+  m_AnchoredPosition: {x: 0.19999695, y: -0.47998047}
   m_SizeDelta: {x: 0.91399956, y: 1.147995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837098280
@@ -3843,6 +3934,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 917170254}
+        m_MethodName: SetAbilityBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Agility
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -4192,7 +4294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13839011, y: 0.127}
   m_AnchorMax: {x: 0.92227805, y: 0.88956636}
-  m_AnchoredPosition: {x: 0.40000153, y: -1.199997}
+  m_AnchoredPosition: {x: 0.3999939, y: -1.1999893}
   m_SizeDelta: {x: 1.0999999, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895109218
@@ -4338,6 +4440,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab2862fda54429479f656dccbcd6ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ability: 
+  scaler: 
+  constant_bonus: 0
+  constantBonusInput: {fileID: 1066790472}
+  formula_text: {fileID: 791059175}
 --- !u!1 &919605327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4376,7 +4483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.42000002, y: 0.2916667}
   m_AnchorMax: {x: 0.5887501, y: 0.48666668}
-  m_AnchoredPosition: {x: 0.19999695, y: -2.199997}
+  m_AnchoredPosition: {x: 0.19999695, y: -2.2000122}
   m_SizeDelta: {x: 2.4, y: 3.2000008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &919605329
@@ -4659,7 +4766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38415053, y: 0.68876404}
   m_AnchorMax: {x: 0.61469895, y: 0.79061127}
-  m_AnchoredPosition: {x: 0.3675995, y: 0.9559784}
+  m_AnchoredPosition: {x: 0.3675995, y: 0.95599365}
   m_SizeDelta: {x: -0.3604002, y: -0.8319001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974279297
@@ -4736,6 +4843,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 557215253}
+        m_MethodName: SetAbilityBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Agility
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5000,7 +5118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13275, y: 0.59333336}
   m_AnchorMax: {x: 0.90025, y: 0.763}
-  m_AnchoredPosition: {x: 0.71499634, y: -3.5}
+  m_AnchoredPosition: {x: 0.7149658, y: -3.5}
   m_SizeDelta: {x: 10.699997, y: 0.69999695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1018595463
@@ -5253,7 +5371,7 @@ GameObject:
   - component: {fileID: 1066790473}
   - component: {fileID: 1066790472}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: AttackConstantBonusInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5332,7 +5450,18 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 917170254}
+        m_MethodName: UpdateConstantBonus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
@@ -5490,6 +5619,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 557215253}
+        m_MethodName: SetChallengeBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1071778081
@@ -5598,7 +5738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.041, y: 0.31732443}
   m_AnchorMax: {x: 0.92300004, y: 0.416}
-  m_AnchoredPosition: {x: -0.91490173, y: 2.1610107}
+  m_AnchoredPosition: {x: -0.9148865, y: 2.1610107}
   m_SizeDelta: {x: 1.8299999, y: -3.5219994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096204118
@@ -5949,7 +6089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13839011, y: 0.13800001}
   m_AnchorMax: {x: 0.9636099, y: 0.9214937}
-  m_AnchoredPosition: {x: 0.0700016, y: -0.11410141}
+  m_AnchoredPosition: {x: 0.069999695, y: -0.114105225}
   m_SizeDelta: {x: -0.13999, y: -0.22299957}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194215483
@@ -6395,7 +6535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.06254846, y: 0.7142252}
   m_AnchorMax: {x: 0.286, y: 0.8122252}
-  m_AnchoredPosition: {x: 0.6269989, y: -0.30000305}
+  m_AnchoredPosition: {x: 0.62701416, y: -0.2999878}
   m_SizeDelta: {x: 0.8899994, y: 1.4199982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1253357361
@@ -6472,6 +6612,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 917170254}
+        m_MethodName: SetAbilityBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Brawn
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6821,7 +6972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.63100004, y: 0.13800001}
   m_AnchorMax: {x: 0.9636099, y: 0.634}
-  m_AnchoredPosition: {x: -0.39500046, y: -0.9929962}
+  m_AnchoredPosition: {x: -0.39500427, y: -0.99299645}
   m_SizeDelta: {x: 0.22000027, y: 0.64500046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328515866
@@ -6896,7 +7047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.021000002, y: 0.111457415}
   m_AnchorMax: {x: 0.3881985, y: 0.870248}
-  m_AnchoredPosition: {x: 0.31999207, y: 0.24251175}
+  m_AnchoredPosition: {x: 0.32000732, y: 0.24251553}
   m_SizeDelta: {x: 1.5100002, y: 0.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337738773
@@ -6956,7 +7107,7 @@ GameObject:
   - component: {fileID: 1345581073}
   - component: {fileID: 1345581072}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: DefendConstant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7035,7 +7186,18 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 557215253}
+        m_MethodName: UpdateConstantBonus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
@@ -7123,7 +7285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.41900003, y: 0.048463944}
   m_AnchorMax: {x: 0.5793031, y: 0.1692928}
-  m_AnchoredPosition: {x: 1.4179993, y: 1.3999634}
+  m_AnchoredPosition: {x: 1.4179993, y: 1.3999023}
   m_SizeDelta: {x: 4.5, y: 2.800003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357848578
@@ -7492,7 +7654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.887, y: 0.9194569}
   m_AnchorMax: {x: 0.9642742, y: 0.9752169}
-  m_AnchoredPosition: {x: -0.30000305, y: 0.28494263}
+  m_AnchoredPosition: {x: -0.30000305, y: 0.2849121}
   m_SizeDelta: {x: 0.6168518, y: 0.61997986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481030544
@@ -7701,7 +7863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.171, y: 0.1486646}
   m_AnchorMax: {x: 0.90400004, y: 0.89948314}
-  m_AnchoredPosition: {x: -0.39999962, y: 0.3899994}
+  m_AnchoredPosition: {x: -0.40000153, y: 0.3899994}
   m_SizeDelta: {x: 0.79999995, y: 0.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522462502
@@ -7857,7 +8019,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.060000002, y: 0.78833336}
   m_AnchorMax: {x: 0.96625006, y: 0.9016667}
-  m_AnchoredPosition: {x: -1.5, y: -1.4100037}
+  m_AnchoredPosition: {x: -1.5, y: -1.4100342}
   m_SizeDelta: {x: 2.6, y: -3.0200005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1582886761
@@ -8093,7 +8255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.21141012, y: 0.14577138}
   m_AnchorMax: {x: 0.8345899, y: 0.81445724}
-  m_AnchoredPosition: {x: -0.21000099, y: 0.5799999}
+  m_AnchoredPosition: {x: -0.20999908, y: 0.58000183}
   m_SizeDelta: {x: -0.119999886, y: -0.11000013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630057211
@@ -8440,7 +8602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6828495, y: 0.712}
   m_AnchorMax: {x: 0.90154845, y: 0.8122252}
-  m_AnchoredPosition: {x: -0.40000153, y: 0.16999817}
+  m_AnchoredPosition: {x: -0.3999939, y: 0.16998291}
   m_SizeDelta: {x: 2.459999, y: 0.70098877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690286706
@@ -8517,6 +8679,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 917170254}
+        m_MethodName: SetAbilityBonus
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Brains
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8861,15 +9034,15 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 20
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Defend Formula: \nStrength + d10 + CHALLENGE\nMaximum Roll: 15\nMinimum
-    Roll: 14"
+  m_Text: "Defend Formula: \nStrength + CHALLENGE\nMaximum Roll: 15\nMinimum Roll:
+    14"
 --- !u!222 &1829285227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9283,7 +9456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.35000038}
+  m_AnchoredPosition: {x: 0, y: -0.3500023}
   m_SizeDelta: {x: -20, y: -9.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982793215
@@ -9319,7 +9492,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter value...
+  m_Text: None...
 --- !u!222 &1982793216
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9438,7 +9611,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.89900005}
   m_AnchorMax: {x: 1, y: 0.98484725}
-  m_AnchoredPosition: {x: 0, y: -0.050079346}
+  m_AnchoredPosition: {x: 0, y: -0.050048828}
   m_SizeDelta: {x: 0, y: -0.1001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013895194
@@ -9517,7 +9690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13872793, y: 0.50975674}
   m_AnchorMax: {x: 0.892, y: 0.7982928}
-  m_AnchoredPosition: {x: 1.6269836, y: 5}
+  m_AnchoredPosition: {x: 1.6269531, y: 5}
   m_SizeDelta: {x: -6.100006, y: -12.299999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030559371
@@ -10110,7 +10283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13839011, y: 0.127}
   m_AnchorMax: {x: 0.92227805, y: 0.88956636}
-  m_AnchoredPosition: {x: 0.40000153, y: -1.199997}
+  m_AnchoredPosition: {x: 0.3999939, y: -1.199997}
   m_SizeDelta: {x: 1.0999999, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099318212
