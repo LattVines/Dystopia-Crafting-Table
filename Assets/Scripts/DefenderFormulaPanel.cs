@@ -19,18 +19,21 @@ public class DefenderFormulaPanel : MonoBehaviour
     public void SetAbilityBonus(string s)
     {
         ability = s;
+        GameController.defend_ability_string = s;
         UpdateFormulaText();
     }
 
     public void SetChallengeBonus(string s)
     {
         challenge_used = s;
+        GameController.defend_challenge_string = s;
         UpdateFormulaText();
     }
 
     public void UpdateConstantBonus()
     {
         constant_bonus = int.Parse(constantBonusInput.text.ToString());
+        GameController.defend_constant_int = constant_bonus;
         UpdateFormulaText();
     }
 
@@ -124,7 +127,7 @@ public class DefenderFormulaPanel : MonoBehaviour
             + "\nMinimum Roll: " + min.ToString();
 
         formula_text.text = formula;
-
+        GameController.defend_formula = formula;
 
     }
 

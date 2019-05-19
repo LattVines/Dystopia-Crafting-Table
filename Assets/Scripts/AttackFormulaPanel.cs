@@ -18,18 +18,21 @@ public class AttackFormulaPanel : MonoBehaviour
     public void SetAbilityBonus(string s)
     {
         ability = s;
+        GameController.attack_ability_string = s;
         UpdateFormulaText();
     }
 
     public void SetScalerBonus(string s)
     {
         scaler = s;
+        GameController.attack_scaler_string = s;
         UpdateFormulaText();
     }
 
     public void UpdateConstantBonus()
     {
-        constant_bonus = int.Parse(constantBonusInput.text.ToString()); ;
+        constant_bonus = int.Parse(constantBonusInput.text.ToString());
+        GameController.attack_constant_int = constant_bonus;
         UpdateFormulaText();
     }
 
@@ -101,7 +104,7 @@ public class AttackFormulaPanel : MonoBehaviour
             + "\nMinimum Roll: " + min.ToString();
 
         formula_text.text = formula;
-    
+        GameController.attack_formula = formula;
     }
 
 
