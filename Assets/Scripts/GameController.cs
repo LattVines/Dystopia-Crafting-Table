@@ -19,7 +19,6 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("gameController awake called");
         //reset static values
         attack_ability_string = string.Empty;
         attack_scaler_string = string.Empty;

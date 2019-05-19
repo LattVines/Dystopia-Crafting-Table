@@ -32,8 +32,10 @@ public class DefenderFormulaPanel : MonoBehaviour
 
     public void UpdateConstantBonus()
     {
-        constant_bonus = int.Parse(constantBonusInput.text.ToString());
-        GameController.defend_constant_int = constant_bonus;
+         if(constantBonusInput.text.ToString() != string.Empty){
+            constant_bonus = int.Parse(constantBonusInput.text.ToString());
+            GameController.defend_constant_int = constant_bonus; 
+            }
         UpdateFormulaText();
     }
 

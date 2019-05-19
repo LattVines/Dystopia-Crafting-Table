@@ -7,11 +7,10 @@ public class ComparisonTableCanvas : MonoBehaviour
     public Text attack_FormulaText, defend_Formulatext;
     public Text formula_text;//SET IN EDITOR
     const string SPACER = "\t\t\t\t";
-    const string SPACER2 = "\t\t\t\t\t\t\t\t\t\t\t";
+    const string SPACER2 = "\t\t\t\t\t\t\t\t\t\t";
     private void OnEnable()
     {
         attack_FormulaText.text = GameController.attack_formula;
-        Debug.Log(GameController.attack_formula);
         defend_Formulatext.text = GameController.defend_formula;
         formula_text.text = GetFormattedTable();
     }
@@ -21,7 +20,7 @@ public class ComparisonTableCanvas : MonoBehaviour
     string GetFormattedTable(){
 
 
-        string s = "attack scaler lvl" + SPACER + "avg attack" + SPACER +"defend lvl" + SPACER + "avg defense by player" + SPACER + "avg defense by enemy\n";
+        string s = "attacker lvl" + SPACER + "avg attack" + SPACER +"defender lvl" + SPACER + "avg defense by player" + SPACER + "avg defense by enemy\n";
         for(int i = 1; i <= 10; i++){
             s += GetTableRow(i) + "\n";
         }
