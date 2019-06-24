@@ -8,14 +8,15 @@ public class ComparisonTableCanvas : MonoBehaviour
     public Text formula_text;//SET IN EDITOR
     const string SPACER = "\t\t\t\t";
     const string SPACER2 = "\t\t\t\t\t\t\t\t\t\t";
+
+
     private void OnEnable()
     {
         attack_FormulaText.text = GameController.attack_formula;
         defend_Formulatext.text = GameController.defend_formula;
         formula_text.text = GetFormattedTable();
+       
     }
-
-
 
     string GetFormattedTable(){
 
@@ -42,7 +43,7 @@ public class ComparisonTableCanvas : MonoBehaviour
 
 
     string GetAverageAttack(int player_level){
-        int average_roll = 5;//attack always start with a roll on d10
+        int average_roll = 10;//attack always start with a roll on d20. So average is half.
 
         if(GameController.attack_scaler_string != string.Empty){
             average_roll += player_level;

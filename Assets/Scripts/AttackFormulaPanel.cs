@@ -8,7 +8,7 @@ public class AttackFormulaPanel : MonoBehaviour
     public int constant_bonus = 0;
     public InputField constantBonusInput;//SET IN EDITOR
     public Text formula_text;//SET IN EDITOR
-
+    
     void Start()
     {
         UpdateFormulaText();
@@ -93,7 +93,7 @@ public class AttackFormulaPanel : MonoBehaviour
         }
         //-----------------------------------------------
 
-        max = brawn + brains + agility + constant_bonus + 10;
+        max = brawn + brains + agility + constant_bonus + 20;//the 20 is the d20
         min = 0 + 0 + 0 + constant_bonus + 1;//agility + brawn + brains + constant bonus + roll of 1 + at least level 1 if scaler used
         if (scaler != string.Empty)
         {
@@ -101,7 +101,7 @@ public class AttackFormulaPanel : MonoBehaviour
             min += 1;
         }
 
-        formula = "Attack Formula:\n" + ability_string + "d10" + scaler_string + constant_bonus_string
+        formula = "Attack Formula:\n" + ability_string + "d20" + scaler_string + constant_bonus_string
             + "\nMaximum Roll: " + max.ToString()
             + "\nMinimum Roll: " + min.ToString();
 
